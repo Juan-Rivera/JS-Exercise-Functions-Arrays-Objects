@@ -78,7 +78,8 @@ function temperatureInF(temp,unit) {
   if (unit === 'F'){
     return temp + unit;
   } else {
-    return temperatureCtoF(temp) + unit;
+    let temp2 = temperatureCtoF(temp);
+    return temp2 + unit;
   }
 
 }
@@ -142,8 +143,8 @@ function getName(makePersonObject){
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+function appleIndex(fruit) {
+  return fruit.indexOf('apple');
 }
 
 /**

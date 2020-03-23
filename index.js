@@ -78,8 +78,8 @@ function temperatureInF(temp,unit) {
   if (unit === 'F'){
     return temp + unit;
   } else {
-    let temp2 = temperatureCtoF(temp);
-    return temp2 + unit;
+    let temp2 = temperatureCtoF(temp) + 'F';
+    return temp2;
   }
 
 }
@@ -162,8 +162,8 @@ function appleIndex(fruit) {
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
-  /* code here */
+function isItAnApple() {
+
 }
 
 
